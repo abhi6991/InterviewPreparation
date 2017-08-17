@@ -1,0 +1,59 @@
+1.) DFS
+Implemented using stack, we can use recursive stack though.
+It tries to reach as deep as possible from a given node. 
+References:
+	1. Algorithms in a Nutshell chapter-6
+
+Time Complexity :O(n+m)
+	where n is the no of nodes and m is the no of edges.
+
+
+2.) BFS
+Implemented using queue.
+It gives the smallest path from fixed source to all nodes.
+To reach a particular node bfs might take longer than dfs.
+
+References:
+	1. Algorithms in a Nutshell chapter-6
+
+Time Complexity :O(n+m)
+	where n is the no of nodes and m is the no of edges.
+
+3.) Dijikstra(Greedy)
+Used for single source shortest path type of problem.
+Cannot be used if weights of the edges are negative.
+
+Time Complexity Analysis:-
+O((V+E)logV)
+Max no of push operations to priority queue are E and each vertex is removed from the priority queue exactly once.
+
+
+
+
+4.) Bellman-Ford(DP)
+Used for single source shortest path type of problem.
+Can be used if weights of the edges are negative.
+Can detect a negative weight cycle, if present in the graph.
+
+Time Complexity Analysis:
+O(V*E)
+
+
+5.) Floyd Warshall(DP)
+Used for all pair shortest path type of problem.
+
+Time Complexity Analysis:
+O(V^3)
+
+6.) Prims Algorithm(Greedy)
+Used to find minimum spanning tree.
+
+Time Complexity Analysis:
+O((V+E)logV)
+Max no of push operations to priority queue are E and each vertex is removed from the priority queue exactly once.
+
+7.) Kruskals Algorithm(Greedy-Disjoint set union)
+Used to find minimum spanning tree.
+
+Time Complexity Analysis:
+O(E log(E))
